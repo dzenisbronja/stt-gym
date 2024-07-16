@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 0;
+  text-align: center;
+}
+
+.sub-title {
+  color: var(--orange);
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  gap: 3rem;
+  justify-content: start;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  align-items: center;
+  padding-bottom: 1.25rem;
+}
+
+tr > th {
+  color: white;
+}
+
+.timetable {
+  padding: 0.62rem;
+  border-radius: calc(0.3125rem * 1);
+}
+
+.Timetable_isBegginerFriendly__scO4E {
+  background-color: white;
+}
+
+tr > td > .Timetable_isBegginerFriendly__scO4E,
+.table-text {
+  color: #363d42;
+}
+
+.Timetable_isAllLevelsFriendly__1oqxc {
+  background-color: var(--orange);
+}
+
+tr > td > .Timetable_isAllLevelsFriendly__1oqxc,
+.table-text {
+  color: white;
+  border-radius: 5%;
+}
+
+.table-scroll-container {
+  padding-top: 0.625rem;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  min-width: 9.375rem;
+}
+
+.table-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0.3125rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .sub-title {
+    max-width: 90%;
+  }
+
+  .flex {
+    max-width: 80%;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .scroll-container {
+    overflow-x: auto;
+    width: 90%;
+  }
+
+  .mantine-ScrollArea-viewport {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .table {
+    display: inline-block;
+    width: auto;
+  }
+}
