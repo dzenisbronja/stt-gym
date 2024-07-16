@@ -1,25 +1,27 @@
-import image1 from "../assets/t-image1.png";
-import image2 from "../assets/t-image2.jpg";
-import image3 from "../assets/t-image3.jpg";
+import image1 from "../assets/merdan-bogucanin.png";
+import image2 from "../assets/atleta.png";
+import image3 from "../assets/tarik-ahmetovic.png";
 
 export const testimonialsData = [
   {
     image: image1,
     review:
-      "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
-    name: 'MATHEW HENDRICKSON',
-    status : 'ENTREPRENEUR'
+      "Odabrao sam pravi klub i program u Sandžak Top Tim-u, dok je uspeh na takmičenjima bio nezaobilazni deo ovog putovanja!",
+    name: "MERDAN BOGUĆANIN",
+    status: "PREDUZETNIK",
   },
   {
     image: image2,
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsam, ab itaque nam perferendis impedit sint ',
-    name: 'JOHN KEVIN',
-    status: 'COACH'
+    review:
+      "Uz iskusne trenere sam za kratak vremenski period ostvario rezultate koji me motivisali na dalji rad u cilju napretka.",
+    name: "MEDIN KONICANIN",
+    status: "SREDNJOŠKOLAC",
   },
   {
-    image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
-    name: 'FRANKLIN',
-    status: "CUSTOMER"
-  }
+    image: image3,
+    review:
+      "Svaki početak je težak, ali ga pravi ljudi čine zanimljivim, a konstantan razvoj i postignuća ga čine inspirativnim.",
+    name: "TARIK AHMETOVIĆ",
+    status: "TRGOVAC",
+  },
 ];

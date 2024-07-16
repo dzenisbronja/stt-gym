@@ -1,0 +1,167 @@
+.plans-container {
+  margin-top: -4rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.plans-blur-1 {
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0rem;
+}
+
+.plans-blur-2 {
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: 0rem;
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+  position: relative;
+}
+
+.toggle-button {
+  width: 8rem;
+  height: 2.7rem;
+  border-radius: 5rem;
+  background-color: var(--orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.5s, color 0.3s;
+}
+
+.toggle-button.toggled {
+  background-color: white;
+  color: var(--orange);
+}
+
+.toggle-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 0.35rem;
+  left: 0.25rem;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.toggle-button.toggled .toggle-circle {
+  left: calc(100% - 2.25rem);
+  background-color: var(--orange);
+}
+
+.toggle-button span {
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: right;
+  width: calc(100% - 1.75rem - 0.5rem);
+  line-height: 3rem;
+}
+
+.toggle-button.toggled span {
+  text-align: right;
+}
+
+.toggle-button.toggled .toggle-circle + span {
+  text-align: left;
+}
+
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--caloryCard);
+  color: white;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 15rem;
+  position: relative;
+}
+
+.mini-div {
+  position: absolute;
+  top: -1rem;
+  border-radius: 4rem;
+  right: 3.3rem;
+  background-color: var(--caloryCard);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.plan:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.02);
+}
+
+.plan > svg {
+  fill: var(--orange);
+  width: 2rem;
+  height: 2rem;
+}
+
+.plan > :nth-child(2) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.plan > :nth-child(3) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.plan > :nth-child(5) {
+  font-size: 0.8rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.feature > img {
+  width: 1rem;
+}
+
+.plan:nth-child(2) > svg {
+  fill: white;
+}
+
+.plan:nth-child(2) > button {
+  color: orange;
+}
+
+@media screen and (max-width: 855px) {
+  .plans {
+    flex-direction: column;
+  }
+}
